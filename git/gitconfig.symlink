@@ -6,6 +6,8 @@
         status = auto
         branch = auto
         ui = true
+[alias]
+        ask = blame        
 [mergetool]
         keepBackup = false
 [difftool]
