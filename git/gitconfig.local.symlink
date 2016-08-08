@@ -1,0 +1,5 @@
+[user]
+        name = esses
+        email = contact@esses.us
+[credential]
+        helper = GIT_CREDENTIAL_HELPER
