@@ -9,4 +9,5 @@ brew 'wget'
 
 cask '1password'
 cask 'google-chrome'
+cask 'iterm2'
 cask 'slack'
