@@ -6,6 +6,9 @@ my dotfiles is my best friend. is is my life. i must master it as i must master 
 
 wihout me, my dotfiles are useless. without my dotfiles, i am useless. 
 
+## .notes
+assumes you're using zsh. you are using zsh, aren't you?
+
 ## .thanks
 
-based on Zach Holman's dotfiles [repo](https://github.com/holman/dotfiles) since [dotfiles are meant to be forked]((https://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/) )
+based on Zach Holman's dotfiles [repo](https://github.com/holman/dotfiles) since [dotfiles are meant to be forked](https://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/)
