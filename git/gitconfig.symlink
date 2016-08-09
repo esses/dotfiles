@@ -7,7 +7,7 @@
         branch = auto
         ui = true
 [alias]
-        ask = blame        
+        ask = blame
 [mergetool]
         keepBackup = false
 [difftool]
@@ -20,4 +20,5 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
-        
+[core]
+        editor = subl -n -w
