@@ -48,11 +48,33 @@ need_push () {
   fi
 }
 
+node_version() {
+  if (( $+commands[node] ))
+  then
+    echo "$(node -v | awk '{print $1}')"
+  fi
+}
+
+node_prompt() {
+  if ! [[ -z "$(node_version)" ]] && [[ -e ./package.json ]]
+  then
+    echo "%{$fg_bold[cyan]%}node $(node_version)%{$reset_color%}"
+  else
+    echo ""
+  fi
+}
+
 directory_name() {
   echo "%{$fg_bold[cyan]%}%~%{$reset_color%}"
 }
 
 export PROMPT=$'\n$(directory_name) $(git_dirty)$(need_push)\n⚡ '
-set_prompt () {
-  export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
+
+set_right_prompt() {
+  export RPROMPT="$(node_prompt)%{$fg_bold[cyan]%}%{$reset_color%}"
+}
+
+# check versions on prompt load
+precmd() {
+  set_right_prompt
 }
