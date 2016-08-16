@@ -12,7 +12,7 @@ assumes you're using zsh. you are using zsh, aren't you?
 ## .todo
 -[ ] alias-ing for directory listings
 
--[ ] ruby or ~node~ versions in prompt with project autodetection
+-[ ] ruby and ~~node~~ versions in prompt with project autodetection
 
 -[ ] moAR os x options
 
