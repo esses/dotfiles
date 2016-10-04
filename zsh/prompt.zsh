@@ -74,7 +74,10 @@ set_right_prompt() {
   export RPROMPT="$(node_prompt)%{$fg_bold[cyan]%}%{$reset_color%}"
 }
 
-# check versions on prompt load
 precmd() {
+  # check versions on prompt load
   set_right_prompt
+
+  # set working dir to title
+  echo -ne "\e]1;${PWD##*/}\a"
 }
