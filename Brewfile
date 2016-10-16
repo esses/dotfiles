@@ -6,6 +6,7 @@ brew 'rbenv'
 brew 'postgresql'
 brew 'unrar'
 brew 'wget'
+brew 'redis'
 
 cask '1password'
 cask 'google-chrome'
