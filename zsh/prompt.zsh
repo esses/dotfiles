@@ -81,3 +81,11 @@ precmd() {
   # set working dir to title
   echo -ne "\e]1;${PWD##*/}\a"
 }
+
+case $TERM in 
+  xterm*)
+    precmd() {
+      print -Pn "\e]0;${PWD##*/}\a"
+    }
+    ;;
+esac
