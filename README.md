@@ -9,6 +9,23 @@ wihout me, my dotfiles are useless. without my dotfiles, i am useless.
 ## .notes
 assumes you're using zsh. you are using zsh, aren't you?
 
+## .from-scratch
+so you got a new system. go you!
+
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew doctor
+brew install zsh
+```
+use zsh as your default shell.
+
+setup our dotfiles:
+```
+./script/bootstrap
+```
+
+:boom:
+
 ## .todo
 -[ ] alias-ing for directory listings
 
