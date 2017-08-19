@@ -35,6 +35,8 @@ setup our dotfiles:
 
 -[ ] directory quick jump
 
+-[ ] vscode settings and extensions
+
 ## .thanks
 
 based on Zach Holman's dotfiles [repo](https://github.com/holman/dotfiles) since [dotfiles are meant to be forked](https://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/)
