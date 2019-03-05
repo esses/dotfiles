@@ -1,1 +1,1 @@
-export PATH="./bin:/usr/local/bin:/usr/local/sbin:~/.rbenv:$ZSH/bin:$PATH"
+export PATH="./bin:/usr/local/bin:/usr/local/sbin:~/.rbenv:$ZSH/bin:$HOME/.cargo/bin:$PATH"
