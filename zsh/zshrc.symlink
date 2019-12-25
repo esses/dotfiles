@@ -40,5 +40,17 @@ unset config_files
 export NVM_DIR="$HOME/.nvm"
   . "/usr/local/opt/nvm/nvm.sh" # This loads nvm
 
-eval "$(rbenv init -)"
+# auto switch npm version on directory changes
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  elif [[ $(nvm version) != $(nvm version default)  ]]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
 
+eval "$(rbenv init -)"
